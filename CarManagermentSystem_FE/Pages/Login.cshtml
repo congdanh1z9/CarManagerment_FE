@@ -1,0 +1,43 @@
+﻿@page "Index"
+@model CarManagermentSystem_FE.Pages.LoginModel
+@{
+    Layout = null;
+}
+<!DocType html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login Page</h2>
+            <form action="#" method="post">
+                <div class="inputbox">
+                    <input asp-for="LoginDTO.UserName" type="text" class="username" required>
+                    <label>UserName</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="inputbox">
+                    <input asp-for="LoginDTO.Password" type="text" class="password" required>
+                    <label>Password</label>
+                    <i class='bx bx-key'></i>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="logreg-link">
+                    <p>Dont Have Account?<a href="#" class="register-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="infor-text login">
+            <h2>Welcome Back!</h2>
+            <p>Cửa Hàng Xe Máy </p><h3 style="color: #fff;">Đặng Huy Hoàng</h3>
+        </div>
+    </div>
+</body>
+
+</html>

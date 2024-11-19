@@ -1,0 +1,116 @@
+﻿@page
+@model CarManagermentSystem_FE.Pages.CartModel
+@{
+
+}
+<head>
+    <link rel="stylesheet" href="~/css/Cart.css" />
+</head>
+<!-- Main Container -->
+<div class="container">
+    <!-- Left Section -->
+    <div class="left">
+        <div class="title">
+            <h1>My Cart</h1>
+            <div class="filter">
+                <h1>Sort</h1>
+                <select>
+                    <option value="">New</option>
+                    <option value="">Old</option>
+                    <option value="">Price</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Table of Items in Cart -->
+        <div class="items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Hình Ảnh</th>
+                        <th>Số Lượng</th>
+                        <th>Màu Sắc</th>
+                        <th>Giá</th>
+                        <th>Tổng Tiền</th>
+                        <th>Chỉnh Sửa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ducati</td>
+                        <td><img src="https://ducativietnam.com/upload/images/Streetfighter/tin%20t%E1%BB%A9c/(5)_____PV4-MY21-Model-Preview-1050x650-v02.png" alt=""></td>
+                        <td>2</td>
+                        <td>Đỏ</td>
+                        <td>2000000000 VND</td>
+                        <td>4000000000 VND</td>
+                        <td><i class='bx bxs-x-square'></i></td>
+                    </tr>
+                    <tr>
+                        <td>Ducati</td>
+                        <td><img src="https://ducativietnam.com/upload/images/Streetfighter/tin%20t%E1%BB%A9c/(5)_____PV4-MY21-Model-Preview-1050x650-v02.png" alt=""></td>
+                        <td>2</td>
+                        <td>Đỏ</td>
+                        <td>2000000000 VND</td>
+                        <td>4000000000 VND</td>
+                        <td><i class='bx bxs-x-square'></i></td>
+                    </tr>
+                    <tr>
+                        <td>Ducati</td>
+                        <td><img src="https://ducativietnam.com/upload/images/Streetfighter/tin%20t%E1%BB%A9c/(5)_____PV4-MY21-Model-Preview-1050x650-v02.png" alt=""></td>
+                        <td>2</td>
+                        <td>Đỏ</td>
+                        <td>2000000000 VND</td>
+                        <td>4000000000 VND</td>
+                        <td><i class='bx bxs-x-square'></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+        <div class="title">
+            <h3>Cart Details</h3>
+            <img src="https://www.shutterstock.com/shutterstock/photos/1216439494/display_1500/stock-vector-handsome-businessman-avatar-profile-character-cool-vector-art-1216439494.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="payments">
+                <a href="#"><i class='bx bxl-visa'></i></a>
+                <a href="#"><i class='bx bxl-paypal'></i></a>
+                <a href="#"><i class='bx bxs-credit-card-alt'></i></a>
+                <a href="#"><i class='bx bx-money'></i></a>
+            </div>
+
+            <div class="info">
+                <span>Tên Người Nhận:</span>
+                <input type="text" name="" required>
+                <span>Số Điện Thoại:</span>
+                <input type="text" name="" required>
+                <span>Ngày Đặt Hàng:</span>
+                <input type="datetime-local" name="" required>
+            </div>
+
+            <div class="summary">
+                <div class="row">
+                    <span>Giá:</span>
+                    <span>4000000000</span>
+                </div>
+                <div class="row">
+                    <span>Thuế:</span>
+                    <span>4000000000</span>
+                </div>
+                <div class="row">
+                    <span>Phí Vận Chuyển:</span>
+                    <span>4000000000</span>
+                </div>
+            </div>
+
+            <div class="button">
+                <h1>$4400000000</h1>
+                <p>Checkout <i class='bx bxs-right-arrow-alt'></i></p>
+            </div>
+        </form>
+    </div>
+</div>

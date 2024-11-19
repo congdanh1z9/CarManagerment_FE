@@ -1,0 +1,51 @@
+﻿@page
+@model CarManagermentSystem_FE.Pages.CarDetailModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/CarDetail.css" />
+</head>
+<div class="container">
+    <div class="left">
+        <div class="title">
+            <h1>Honda Civic</h1>
+        </div>
+        <div class="image_thumble">
+            <img id="mainImage" src="https://yamaha-motor.com.vn/wp/wp-content/uploads/2023/09/Exciter-155-VVA-GP-ABS_004-768x645.png" alt="">
+        </div>
+        <div class="list_image">
+            <ul>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000281285/product/tc_-_do_xam_44e1c81cb8974583bcb3fc449056f168_master.png" alt=""></li>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000795625/product/exciter-155-vva-grey-mint-abs_bfb3bb06962b476d85f388f87a03917a_master.png" alt=""></li>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000281285/product/tc_-_do_xam_44e1c81cb8974583bcb3fc449056f168_master.png" alt=""></li>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000795625/product/exciter-155-vva-grey-mint-abs_bfb3bb06962b476d85f388f87a03917a_master.png" alt=""></li>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000281285/product/tc_-_do_xam_44e1c81cb8974583bcb3fc449056f168_master.png" alt=""></li>
+                <li><img class="thumbnail" src="https://product.hstatic.net/200000795625/product/exciter-155-vva-grey-mint-abs_bfb3bb06962b476d85f388f87a03917a_master.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Honda Civic</h2>
+        <p>Rate: <span>1.0<i style="color: yellow;" class='bx bxs-star'></i></span></p>
+        <div class="color">
+            <p>Color:</p>
+            <ul>
+                <li><i style="color: rgb(9, 15, 20);" class='bx bxs-color'></i></li>
+                <li><i style="color: rgb(0, 127, 238);" class='bx bxs-color'></i></li>
+                <li><i style="color: rgb(2, 84, 36);" class='bx bxs-color'></i></li>
+                <li><i style="color: rgb(210, 207, 9);" class='bx bxs-color'></i></li>
+                <li><i style="color: rgb(241, 9, 218);" class='bx bxs-color'></i></li>
+            </ul>
+        </div>
+        <div class="description">
+            <p class="text">
+                Description:
+                <span>Hãy tưởng tượng niềm vui của bé khi được khám phá thế giới xung quanh trên chiếc xe điện 801 màu sắc tươi tắn. Với thiết kế nhỏ gọn và an toàn, chiếc xe như một người bạn đồng hành thân thiết, giúp bé rèn luyện thể chất và phát triển trí tuệ. Bé sẽ tự tin hơn, năng động hơn và có những giờ phút vui chơi thật sự ý nghĩa. Món quà ý nghĩa này chắc chắn sẽ để lại những kỷ niệm đẹp trong tuổi thơ của bé.</span>
+            </p>
+            <button id="toggleBtn" type="submit">Show More...</button>
+        </div>
+        <p>Gender: <span>Unisex</span></p>
+        <p>Stage: <span>2024</span></p>
+    </div>
+</div>
+<script src="/js/CarDetail.js"></script>

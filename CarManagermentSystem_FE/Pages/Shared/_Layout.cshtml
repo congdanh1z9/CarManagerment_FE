@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Layout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Đặng Huy Hoàng</h2>
+        <ul>
+            <li>Trang chủ</li>
+            <li>Xe Máy</li>
+            <li>Tin Tức</li>
+            <li>Hỗ Trợ</li>
+            <li>Liên Lạc</li>
+        </ul>
+        <div class="button">
+            <a asp-page="/Login"><input type="submit" value="Login"/></a>
+            <a asp-page="/Cart"><i class='bx bxs-cart-alt'></i></a>
+        </div>
+    </div>
+    @RenderBody()
+    <div class="footer">
+        <div class="first">
+            <div class="support">
+                <h1>Trung Tâm Hỗ Trợ</h1>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h1>Về Chúng Tôi</h1>
+                <ul>
+                    <li><a href="#">Về Xe máy Dặng Huy Hoàng</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Điều khoản chính sách</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h1>Theo dõi chúng tôi</h1>
+                <ul>
+                    <li><a href="#">FaceBook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="second">
+            <ul>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Quy chế hoạt động</a></li>
+                <li><a href="#">Trả hàng & hoàn tiền</a></li>
+                <li><a href="#">SITEMAP</a></li>
+            </ul>
+        </div>
+        <div class="three">
+            <h1>CÔNG TY TNHH Đặng Huy Hoàng</h1>
+            <p>Địa chỉ: Số 7E, Cư Xá Khu Công Nghiệp, Khu Phố 10, Phường An Bình, Thành phố Biên Hoà, Tỉnh Đồng Nai, Việt Nam.</p>
+            <p>Điện thoại: 19002145</p>
+            <p>Email: info@xemayhuyhoang.vn</p>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

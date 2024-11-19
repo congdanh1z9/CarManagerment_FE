@@ -1,0 +1,91 @@
+﻿@page
+@model CarManagermentSystem_FE.Pages.HomeModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/Home.css" />
+</head>
+<div class="toolbar">
+    <p>Tìm Kiếm Thông Tin Xe</p>
+    <h1>Tìm Kiếm Xe Yêu Thích</h1>
+    <div class="searchbox">
+        <form action="">
+            <section>
+                <select name="car-type" id="car-type">
+                    <option value="">Xe Tay Ga</option>
+                    <option value="">Xe Tay Số</option>
+                    <option value="">Xe Tay Côn</option>
+                </select>
+            </section>
+            <input type="text" value="Xe vario">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="main_newCar">
+        <h1 class="title">Xe Máy Mới</h1>
+        <div class="items">
+            <a asp-page="/CarDetail">
+                <div class="item">
+                    <p>Xe Tay Ga Vario</p>
+                    <img src="https://www.bing.com/th?id=OIP.H_gd-KXNQZMdU6sgVT49PQHaFY&w=218&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="hinh xe may">
+                    <p>price : 100.000.000 VND</p>
+                    <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a>
+                    </br>
+                    <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+                </div>
+            </a>
+            <div class="item">
+                <p>Xe Tay Ga Vario</p>
+                <img src="https://images.frandroid.com/wp-content/uploads/2022/11/kawazaki-ninja-bev-1-def.jpeg" alt="hinh xe may">
+                <p>Giá : 100.000.000 VND</p>
+                <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a></br>
+                <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+            </div>
+            <div class="item">
+                <p>Xe Tay Ga Vario</p>
+                <img src="https://th.bing.com/th/id/R.b7beed5eaca2402211ca564ddc71e136?rik=eLESYgGJzuQdLQ&pid=ImgRaw&r=0" alt="hinh xe may">
+                <p>Giá : 100.000.000 VND</p>
+                <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a></br>
+                <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+            </div>
+            <div class="item">
+                <p>Xe Tay Ga Vario</p>
+                <img src="https://th.bing.com/th/id/OIP.Mppgij1F5ZxPksJMHDuRpAHaFj?rs=1&pid=ImgDetMain" alt="hinh xe may">
+                <p>Giá : 100.000.000 VND</p>
+                <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a></br>
+                <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+            </div>
+            <div class="item">
+                <p>Xe Tay Ga Vario</p>
+                <img src="https://www.bing.com/th?id=OIP.H_gd-KXNQZMdU6sgVT49PQHaFY&w=218&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="hinh xe may">
+                <p>Giá : 100.000.000 VND</p>
+                <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a></br>
+                <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+            </div>
+            <div class="item">
+                <p>Xe Tay Ga Vario</p>
+                <img src="https://www.bing.com/th?id=OIP.H_gd-KXNQZMdU6sgVT49PQHaFY&w=218&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="hinh xe may">
+                <p>Giá : 100.000.000 VND</p>
+                <a href="/Page/CarDetail.html"><i class='bx bxs-detail'></i></a></br>
+                <button type="button">Add To Cart <i class='bx bx-cart-download'></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidebar">
+        <h1>Danh Mục</h1>
+        <ul>
+            <li>Tất Cả Sản Phẩm</li>
+            <li>Xe Máy Nhập Khẩu</li>
+            <li>Xe Tay Ga</li>
+            <li>Xe Số & Tay Côn</li>
+            <li>Xe Điện Xe 50cc</li>
+            <li>Dịch Vụ</li>
+            <li>Phụ Kiện</li>
+            <li>Phụ Tùng</li>
+        </ul>
+    </div>
+</div>
